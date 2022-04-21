@@ -1,8 +1,6 @@
 import React from "react";
 
 function App() {
-  const hello = () => "Hodfjadf jdaflkjd lkfj lkj f";
-
   return (
     <div className="App">
       <header className="App-header">

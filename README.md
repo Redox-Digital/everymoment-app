@@ -49,6 +49,7 @@ The folder structure is inspired by [ITCSS](https://developer.helpscout.com/seed
 - `layouts` : Style rules for elements responsible for layout or structuring.
 - `components` : UI specific rules, like cards, call-to-actions, ...
 
+_Note: don't forget to import your newly created `.scss` file into `/styles/index.scss`_
 
 <!--
 ### Formatting
