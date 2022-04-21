@@ -1,13 +1,12 @@
-# Every Moment - Back End API
+# Every Moment - Front End App
 
-API for the EveryMoment website based on Laravel.
+API for the EveryMoment website based on React.
 
 ## Getting started
 
 ```shell
 npm install
-npm run dev
-php artisan serve
+npm start
 ```
 
 ## Production
