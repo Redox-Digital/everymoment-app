@@ -86,3 +86,5 @@ README text adapted from [Satche](https://github.com/satche).
 [MIT license](LICENSE).
 
 Copyright (c) 2022-present, [Redox Digital](https://redoxdigital.ch)
+
+test
