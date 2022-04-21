@@ -22,17 +22,48 @@ npm run prod
 
 If you contribute to this project, please follow those guidelines.
 
+### Methodology
+
+**CSS: BEM**
+
+The CSS class naming is inspired by [BEM](https://bem.info/). It stands for "Block Element Modifier":
+
+- Block is the main container, like a card
+- Elements are items in the block; like title, button, ...
+- Modifier are variations; like states, alternative colors, ...
+
+*Example*
+
+```css
+.poiCard { ... }                      /* Block */
+.poiCard__title { ... }               /* Block__Element */
+.poiCard__button--secondary { ... }   /* Block__Element--Modifier */
+```
+
+**CSS: ITCSS**
+
+The folder structure is inspired by [ITCSS](https://developer.helpscout.com/seed/glossary/itcss/). We organise folders like so:
+
+- `settings` : variables, mixins, libraries, ...
+- `normalize` : CSS resets and normalizing rules
+- `elements` : Style rules for bare HTML elements (like `h1` or `button`).
+- `layouts` : Style rules for elements responsible for layout or structuring.
+- `components` : UI specific rules, like cards, call-to-actions, ...
+
+
+<!--
 ### Formatting
 
 We use [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) and [EditorConfig](https://editorconfig.org) to enforce a consistent coding style. Have a look at the corresponding extensions for your editor. Check the config files for more information.
+-->
 
 ### Git workflow
 
 **Commit**
 
-When you commit, write it so it describes what the commit do. It should begin with a verb. To make this easy, always think as the followint of the sentence "This commit…".
+When you commit, write it so it describes what the commit do. It should begin with a verb. To make this easy, always think as the followint of the sentence "This commit...".
 
-> Examples: `Add POST User`, `Fix issue #123`, `Update README.md`, …
+> Examples: `Add POST User`, `Fix issue #123`, `Update README.md`, ...
 
 **Branches**
 
@@ -71,13 +102,13 @@ In all case, make sure to close the issue when you fix it.
 
 ## Contributors
 
-<a href="https://github.com/Redox-Digital/everymoment/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=Redox-Digital/everymoment"/>
+<a href="https://github.com/Redox-Digital/everymoment-api/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Redox-Digital/everymoment-app"/>
 </a>
 
 ## Technologies
 
-![Laravel](https://img.shields.io/badge/Laravel-F9322C?style=flat&logo=laravel&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)
 
 ## Licenses
 

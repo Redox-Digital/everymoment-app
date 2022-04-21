@@ -1,0 +1,19 @@
+/********************************
+ * INDEX
+ *
+ * We use BEM and ITCSS inspired methodlogies to name our class and
+ * structure our folders. Have a look at the [README.md](/README.md)
+ * for information about.
+ ********************************/
+
+// Settings :  Variable configurations for things like colors, fonts, sizes, etc…
+@import "./settings/variables.scss";
+
+// Normalize :  CSS resets and normalizing rules to create a foundation for your styles.
+@import "./normalize/normalize.scss";
+
+// Elements :  Style rules for bare HTML elements (like h1 or button).
+
+// Layouts : Style rules for elements responsible for layout or structuring.
+
+// Components : Style rules for UI components.
