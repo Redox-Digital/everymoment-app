@@ -1,7 +1,14 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
-function App() {
-  return <div className="App">Hello</div>;
+export default function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/*" element={<Error404 />} /> */}
+      </Routes>
+    </div>
+  );
 }
-
-export default App;
