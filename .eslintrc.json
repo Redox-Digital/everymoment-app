@@ -34,7 +34,7 @@
     "react/no-unused-state": [1],
     "react/no-unused-prop-types": [1],
     "react/require-default-props": [1],
-    "jsx-a11y/anchor-is-valid": ["warn"]
+    "jsx-a11y/anchor-is-valid": [0]
   },
   "settings": {
     "import/resolver": {

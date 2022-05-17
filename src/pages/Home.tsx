@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div id="home">
+    <main id="home">
       <section id="home__hero" className="hero">
         <h1>enjoy every moment of your life</h1>
         <h4>Découvrez nos derniers produits et collections</h4>
@@ -104,6 +104,6 @@ export default function Home() {
           Follow us on Instagram
         </a>
       </section>
-    </div>
+    </main>
   );
 }

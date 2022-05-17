@@ -18,15 +18,37 @@
   --img-box-shadow: 0px -6px 20px #ffffff, 0px 6px 20px rgba(20, 92, 176, 0.25);
   --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  --fs-h1: 55px;
-  --fs-h2: 40px;
-  --fs-h3: 32px;
-  --fs-h4: 24px;
-  --fs-p: 18px;
-  --fs-sm: 17px;
+  --fs-h1: 34px;
+  --fs-h2: 30px;
+  --fs-h3: 26px;
+  --fs-h4: 22px;
+  --fs-h5: 19px;
+  --fs-h6: 26px;
+  --fs-p: 16px;
+  --fs-sm: 15px;
+  --fs-xs: 9px;
+  --fs-btn: 18px;
 
-  --default-margin: 20px;
+  --default-margin: 15px;
   --default-padding: 10px;
   --default-border-radius: 10px;
-  --navbar-height: 74px;
+  --navbar-height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    --fs-h1: 55px;
+    --fs-h2: 40px;
+    --fs-h3: 32px;
+    --fs-h4: 24px;
+    --fs-h5: 21px;
+    --fs-h6: 26px;
+    --fs-p: 18px;
+    --fs-sm: 17px;
+    --fs-xs: 10px;
+    --fs-btn: 20px;
+
+    --default-margin: 20px;
+    --navbar-height: 80px;
+  }
 }
