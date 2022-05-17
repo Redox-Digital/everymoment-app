@@ -6,14 +6,14 @@ export default function Home() {
       <section id="home__hero" className="hero">
         <h1>enjoy every moment of your life</h1>
         <h4>Découvrez nos derniers produits et collections</h4>
-        <a className="btn btn--white" href="#">
+        <a className="btn btn--secondary" href="#">
           Homme
         </a>
-        <a className="btn btn--white" href="#">
+        <a className="btn btn--secondary" href="#">
           Femme
         </a>
       </section>
-      <section className="imgCategories">
+      <section className="imgCategories container">
         <h3>Quel type de vêtements recherches-tu ?</h3>
         <div className="imgCard">
           <h4>Vestes, Gilets</h4>
@@ -37,7 +37,7 @@ export default function Home() {
               Id atque voluptatibus aut error distinctio eum iste corrupti sed galisum debitis et
               nesciunt molestias ut eaque labore sit incidunt dolores.
             </p>
-            <a href="#" className="btn btn-primary">
+            <a href="#" className="btn btn--primary">
               En savoir plus
             </a>
           </div>
@@ -100,7 +100,7 @@ export default function Home() {
       <section id="home__insta">
         <h2>Instagram</h2>
         {/* IG API */}
-        <a href="#" className="btn btn-primary">
+        <a href="#" className="btn btn--primary">
           Follow us on Instagram
         </a>
       </section>

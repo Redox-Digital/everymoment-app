@@ -11,6 +11,7 @@
 
 // Normalize :  CSS resets and normalizing rules to create a foundation for your styles.
 @import './normalize/normalize.scss';
+@import './normalize/bootstrap.min.css';
 
 // Elements :  Style rules for bare HTML elements (like h1 or button).
 @import './elements/typographies.scss';
@@ -18,3 +19,4 @@
 // Layouts : Style rules for elements responsible for layout or structuring.
 
 // Components : Style rules for UI components.
+@import './components/buttons.scss';
