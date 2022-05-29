@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.btn--sm {
+  height: 42px !important;
+}
+
 .btn--primary {
   background: var(--primary-gradient);
   color: var(--white);

@@ -1,0 +1,46 @@
+#home {
+  section {
+    margin: 70px auto;
+  }
+
+  &__hero {
+    margin-top: 0;
+  }
+
+  &__summary {
+    .btn {
+      margin: 40px auto;
+    }
+
+    .fullImgContainer {
+      padding: 0 !important;
+      img {
+        width: 100vw;
+        height: auto;
+        box-shadow: var(--img-box-shadow);
+      }
+    }
+  }
+
+  &__collections {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 35px !important;
+
+    &Gallery a {
+      margin-bottom: var(--default-margin);
+      > img {
+        max-width: 100%;
+      }
+    }
+
+    &Texts {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__community {
+    background: var(--dark-gradient);
+    margin-top: 0 !important;
+  }
+}

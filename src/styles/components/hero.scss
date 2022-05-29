@@ -1,0 +1,45 @@
+.hero {
+  background-color: var(--primary-blue);
+  text-align: center;
+  text-shadow: var(--text-shadow);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+
+  // margin-top: var(--navbar-height);
+  padding: 200px var(--default-margin) 90px var(--default-margin);
+
+  > h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  > h5 {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  > .btn {
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  > .btn:last-of-type {
+    margin-bottom: 0;
+  }
+
+  > .btn--secondary {
+    box-shadow: var(--text-shadow);
+  }
+}
+
+#home__hero {
+  background-image: url('../assets/img/home-cover.jpg');
+}

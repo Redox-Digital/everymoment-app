@@ -21,6 +21,8 @@
 
 // Layouts : Style rules for elements responsible for layout or structuring.
 @import './layouts/containers.scss';
+@import './layouts/home.scss';
 
 // Components : Style rules for UI components.
 @import './components/buttons.scss';
+@import './components/hero.scss';

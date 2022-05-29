@@ -5,11 +5,11 @@ export default function Home() {
     <main id="home">
       <section id="home__hero" className="hero">
         <h1>enjoy every moment of your life</h1>
-        <h4>Découvrez nos derniers produits et collections</h4>
-        <a className="btn btn--secondary" href="#">
+        <h5>Découvrez nos derniers produits et collections</h5>
+        <a className="btn btn--sm btn--secondary" href="#">
           Homme
         </a>
-        <a className="btn btn--secondary" href="#">
+        <a className="btn btn--sm btn--secondary" href="#">
           Femme
         </a>
       </section>
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
       <section id="home__summary" className="container">
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6 col-12">
             <h2>Résumé</h2>
             <p>
               Lorem ipsum dolor sit amet. Est nihil velit et officiis quaerat est animi voluptate
@@ -41,19 +41,29 @@ export default function Home() {
               En savoir plus
             </a>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 col-12 fullImgContainer">
             <img src="https://picsum.photos/400/515" alt="" />
           </div>
         </div>
       </section>
       <section id="home__collections" className="container">
-        <div className="col-7">
-          <img src="https://picsum.photos/300/300" alt="" />
-          <img src="https://picsum.photos/300/300" alt="" />
-          <img src="https://picsum.photos/300/300" alt="" />
-          <img src="https://picsum.photos/300/300" alt="" />
+        <div id="home__collectionsGallery" className="col-md-7 col-12">
+          <div className="row">
+            <a className="col-6" href="#">
+              <img src="https://picsum.photos/300/300" alt="" />
+            </a>
+            <a className="col-6" href="#">
+              <img src="https://picsum.photos/300/300" alt="" />
+            </a>
+            <a className="col-6" href="#">
+              <img src="https://picsum.photos/300/300" alt="" />
+            </a>
+            <a className="col-6" href="#">
+              <img src="https://picsum.photos/300/300" alt="" />
+            </a>
+          </div>
         </div>
-        <div className="col-5">
+        <div id="home__collectionsTexts" className="col-md-5 col-12">
           <h2>Collections</h2>
           <p>
             Lorem ipsum dolor sit amet. Ut consequatur doloremque vel assumenda aliquam ut ipsum
@@ -62,6 +72,7 @@ export default function Home() {
         </div>
       </section>
       <section id="home__community" className="container">
+        <h2>Communauté</h2>
         <article>
           <img src="https://picsum.photos/320/180" alt="" />
           <h6>25 janvier 2022</h6>

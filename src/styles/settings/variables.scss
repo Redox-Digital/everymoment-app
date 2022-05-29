@@ -11,6 +11,12 @@
 
   --dark-gradient: linear-gradient(89.59deg, #052b57 2.84%, #161b33 99.66%);
   --primary-gradient: linear-gradient(92.77deg, #003d85 -4.91%, #248dff 78.57%, #007af3 103.39%);
+  --primary-gradient-reverse: linear-gradient(
+    92.77deg,
+    #007af3 -4.91%,
+    #248dff 78.57%,
+    #003d85 103.39%
+  );
   --white-gradient: linear-gradient(92.03deg, #e2e2e2 -12.57%, #ffffff 50.7%, #f3f3f3 107.18%);
 
   --drop-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25), -4px -4px 8px #ffffff;
