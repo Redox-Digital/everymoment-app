@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer>
-      <div className="footer container">
+      <div className="footer">
         <div className="footer__socials">
           <h4>Suivez-nous</h4>
           <ul>
@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="footer__contactDetails">
             <i className="fa-solid fa-envelope-open" />
             <h4>E-mail</h4>
-            <a href="#">
+            <a href="mailto:info@everymoment.ch">
               <span id="mail" />
             </a>
             <small>Nous répondons dans les 48h.</small>
@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="footer__contactDetails">
             <i className="fa-solid fa-phone-flip" />
             <h4>Téléphone</h4>
-            <a href="#">
+            <a href="tel:+41790000000">
               <span id="phone" />
             </a>
             <small>Disponible en semaine, de 9h00 à 17h00.</small>
@@ -56,37 +56,45 @@ export default function Footer() {
           <ul>
             <li>
               <a href="#">
-                <h6>Texte</h6>
+                <h3>Contact</h3>
               </a>
             </li>
             <li>
               <a href="#">
-                <h6>Texte</h6>
+                <h3>FAQ</h3>
               </a>
             </li>
             <li>
               <a href="#">
-                <h6>Texte</h6>
+                <h3>Entretien & réparations</h3>
               </a>
             </li>
             <li>
               <a href="#">
-                <h6>Texte</h6>
+                <h3>Conditions générales</h3>
               </a>
             </li>
             <li>
-              <a href="#">
-                <h6>Texte</h6>
-              </a>
+              <span className="footer__langSelector">
+                <i className="fa-solid fa-earth-europe" />
+                Choisis ta langue :
+                <select>
+                  <option selected value="FR">
+                    FR
+                  </option>
+                  <option value="EN">EN</option>
+                  <option value="DE">DE</option>
+                </select>
+              </span>
             </li>
           </ul>
         </div>
-        <div className="footer__copyright">
-          <h6 className="light">Copyright Every Moment, 2022</h6>
-        </div>
-        <div className="footer__payments">
-          <img src="https://picsum.photos/73/25" alt="" />
-          <img src="https://picsum.photos/73/25" alt="" />
+        <div className="footer__bottom">
+          <div className="footer__bottomPayments">
+            <img src="https://picsum.photos/73/25" alt="PayPal" />
+            <img src="https://picsum.photos/73/25" alt="VISA" />
+          </div>
+          <small>Copyright Every Moment, 2022</small>
         </div>
       </div>
     </footer>

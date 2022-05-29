@@ -1,12 +1,13 @@
 footer {
   color: var(--white);
   background: var(--dark-gradient);
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding: 5rem var(--default-margin) 3rem var(--default-margin);
+
+  --footer-elt-pad: 25px;
 
   .footer {
     &__socials {
-      padding-bottom: 5rem;
+      padding-bottom: 40px;
       border-bottom: 1px solid var(--secondary-blue);
       h4 {
         margin: 0;
@@ -20,7 +21,7 @@ footer {
 
         li {
           list-style: none;
-          margin-right: 20px;
+          margin-right: 30px;
 
           a {
             font-size: 30px;
@@ -40,23 +41,73 @@ footer {
         flex-direction: column;
         align-items: center;
 
+        &:first-of-type {
+          margin-bottom: 40px;
+        }
+
         > i {
           font-size: 38px;
           border: solid var(--white) 3px;
           border-radius: 100px;
-          padding: 12px;
+          padding: 15px;
         }
 
         > h4 {
-          margin: 0;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        // Phone number & mail
+        > a {
+          display: none;
+          color: var(--white);
         }
       }
     }
 
     &__support {
+      color: var(--white);
+
+      > ul {
+        margin: 0;
+        padding: 0;
+
+        > li {
+          border-top: solid 1px var(--secondary-blue);
+          list-style: none;
+
+          > .footer__langSelector {
+            padding-top: var(--footer-elt-pad);
+            padding-bottom: var(--footer-elt-pad);
+            display: flex;
+
+            > i {
+              margin-right: 5px;
+            }
+          }
+
+          > a {
+            color: var(--white);
+
+            > h3 {
+              margin: 0;
+              padding-top: var(--footer-elt-pad);
+              padding-bottom: var(--footer-elt-pad);
+            }
+          }
+        }
+      }
     }
 
-    &__copyright {
+    &__bottom {
+      &Payments {
+        margin-top: calc(70px - var(--footer-elt-pad));
+        margin-bottom: 70px;
+
+        > img {
+          margin-right: 40px;
+        }
+      }
     }
   }
 }

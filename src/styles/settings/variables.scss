@@ -36,6 +36,16 @@
   --navbar-height: 60px;
 }
 
+#phone::before {
+  content: '+41 79 000 00 00';
+  display: inline;
+}
+
+#mail::before {
+  content: 'info@everymoment.ch';
+  display: inline;
+}
+
 @media screen and (min-width: 768px) {
   * {
     --fs-h1: 55px;
