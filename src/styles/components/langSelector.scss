@@ -1,0 +1,9 @@
+.langSelector {
+  padding-top: var(--footer-elt-pad);
+  padding-bottom: var(--footer-elt-pad);
+  display: flex;
+
+  > i {
+    margin-right: 5px;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import LangSelector from './LangSelector';
 
 export default function Footer() {
   return (
@@ -75,17 +76,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <span className="footer__langSelector">
-                <i className="fa-solid fa-earth-europe" />
-                Choisis ta langue :
-                <select>
-                  <option selected value="FR">
-                    FR
-                  </option>
-                  <option value="EN">EN</option>
-                  <option value="DE">DE</option>
-                </select>
-              </span>
+              <LangSelector />
             </li>
           </ul>
         </div>

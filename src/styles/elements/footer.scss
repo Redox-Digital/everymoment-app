@@ -76,16 +76,6 @@ footer {
           border-top: solid 1px var(--secondary-blue);
           list-style: none;
 
-          > .footer__langSelector {
-            padding-top: var(--footer-elt-pad);
-            padding-bottom: var(--footer-elt-pad);
-            display: flex;
-
-            > i {
-              margin-right: 5px;
-            }
-          }
-
           > a {
             color: var(--white);
 
