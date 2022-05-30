@@ -1,6 +1,18 @@
 import React from 'react';
+import ArticlePreview from '../components/ArticlePreview';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
+  const randomDate = (start: Date, end: Date) =>
+    new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+
+  // Static values
+  const slides = [
+    { id: 1, title: 'Vestes, Gilets', img: 'https://picsum.photos/290/290' },
+    { id: 2, title: 'Couches intermédiaires', img: 'https://picsum.photos/300/300' },
+    { id: 3, title: 'Sous-vêtements techniques', img: 'https://picsum.photos/295/295' },
+  ];
+
   return (
     <main id="home">
       <section id="home__hero" className="hero">
@@ -14,16 +26,8 @@ export default function Home() {
         </a>
       </section>
       <section className="imgCategories container">
-        <h3>Quel type de vêtements recherches-tu ?</h3>
-        <div className="imgCard">
-          <h4>Vestes, Gilets</h4>
-        </div>
-        <div className="imgCard">
-          <h4>Couches intermédiaires</h4>
-        </div>
-        <div className="imgCard">
-          <h4>Sous-vêtements techniques</h4>
-        </div>
+        <h3>Quel type de vêtements recherches&#8209;tu&nbsp;?</h3>
+        <Carousel slides={slides} />
       </section>
       <section id="home__summary" className="container">
         <div className="row">
@@ -50,16 +54,16 @@ export default function Home() {
         <div id="home__collectionsGallery" className="col-md-7 col-12">
           <div className="row">
             <a className="col-6" href="#">
-              <img src="https://picsum.photos/300/300" alt="" />
+              <img src="https://picsum.photos/298/298" alt="" />
             </a>
             <a className="col-6" href="#">
               <img src="https://picsum.photos/300/300" alt="" />
             </a>
             <a className="col-6" href="#">
-              <img src="https://picsum.photos/300/300" alt="" />
+              <img src="https://picsum.photos/290/290" alt="" />
             </a>
             <a className="col-6" href="#">
-              <img src="https://picsum.photos/300/300" alt="" />
+              <img src="https://picsum.photos/295/295" alt="" />
             </a>
           </div>
         </div>
@@ -73,44 +77,31 @@ export default function Home() {
       </section>
       <section id="home__community" className="container">
         <h2>Communauté</h2>
-        <article>
-          <img src="https://picsum.photos/320/180" alt="" />
-          <h6>25 janvier 2022</h6>
-          <h4>BA Collection</h4>
-          <a href="#">Lire l&lsquo;article</a>
-        </article>
-        <article>
-          <img src="https://picsum.photos/320/180" alt="" />
-          <h6>25 janvier 2022</h6>
-          <h4>BA Collection</h4>
-          <a href="#">Lire l&lsquo;article</a>
-        </article>
-        <article>
-          <img src="https://picsum.photos/320/180" alt="" />
-          <h6>25 janvier 2022</h6>
-          <h4>BA Collection</h4>
-          <a href="#">Lire l&lsquo;article</a>
-        </article>
-        <article>
-          <img src="https://picsum.photos/320/180" alt="" />
-          <h6>25 janvier 2022</h6>
-          <h4>BA Collection</h4>
-          <a href="#">Lire l&lsquo;article</a>
-        </article>
+        {/* FUTURE COMPONENT, avec onClick */}
+        {[...Array(5)].map((i) => (
+          <ArticlePreview
+            key={i}
+            date={randomDate(new Date(2016, 10, 1), new Date())}
+            title="BA Collection"
+            img="https://picsum.photos/320/180"
+            link="#"
+          />
+        ))}
       </section>
-      <section id="home__faqCTA" className="container cta">
+      <section id="home__FAQ" className="container cta">
         <h3>FAQ</h3>
         <p>
           Lorem ipsum dolor sit amet. Eum voluptatem voluptatem et voluptas voluptates hic expedita
           dolor ut provident quas rem expedita perspiciatis!
         </p>
-        <a href="#" className="btn btn-white">
+        <a href="#" className="btn btn--secondary">
           En savoir plus
         </a>
       </section>
-      <section id="home__insta">
+      <section id="home__insta" className="d-none">
         <h2>Instagram</h2>
         {/* IG API */}
+        {/* https://nocodeapi.com/instagram-api */}
         <a href="#" className="btn btn--primary">
           Follow us on Instagram
         </a>

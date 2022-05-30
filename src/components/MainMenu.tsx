@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function MainMenu() {
+  const [burgerOpen, setBurgerOpen] = useState(false);
+
+  const toggleBurger = () => {
+    setBurgerOpen(!burgerOpen);
+  };
   /* Animation Burger  : https://codepen.io/elitsa_dimitrova/pen/LJWBVo  */
   return (
     <nav>
       <div className="menu">
-        <div className="menuBurger">
-          <a href="#">
-            <span className="burger" />
-            <span className="burger" />
-            <span className="burger" />
-            <span className="iconLabel">Menu</span>
-          </a>
-        </div>
+        <button
+          type="button"
+          id="burgerBtn"
+          className={`menuBurger ${burgerOpen ? 'isOpen' : 'notOpen'}`}
+          onClick={toggleBurger}
+        >
+          <span className="burger" />
+          <span className="burger" />
+          <span className="burger" />
+          <span className="iconLabel" />
+        </button>
         <div className="menuLeft">
           <a href="#">Vêtements</a>
           <a href="#">Accessoires</a>
         </div>
         <div className="menuMid">
-          <img src="https://picsum.photos/400/42" alt="Every Moment" />
+          <a href="#">
+            <img src="./assets/img/logo-horiz.png" alt="Every Moment" />
+          </a>
         </div>
         <div className="menuRight">
           <div className="menuRight__links">

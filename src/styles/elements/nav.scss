@@ -3,6 +3,9 @@ nav {
   z-index: 10;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 
   .menu {
     display: flex;
@@ -31,6 +34,21 @@ nav {
 
     &Burger {
       width: 26px;
+      z-index: 12;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.isOpen .iconLabel::after {
+        content: 'Fermer';
+      }
+
+      .iconLabel::after {
+        content: 'Menu';
+      }
 
       > a {
         display: flex;
@@ -43,7 +61,43 @@ nav {
         display: block;
         width: 100%;
         border-radius: 10px;
+        position: relative;
+        transition: all 0.3s;
+      }
+
+      .burger + .burger {
         margin-top: 3px;
+      }
+
+      &.isOpen .burger:nth-child(1) {
+        animation: all ease 0.3s;
+        transform: rotate(-45deg);
+        transform: translateY(7px);
+      }
+
+      &.notOpen .burger:nth-child(1) {
+        animation: all ease 0.3s;
+        transform: rotate(0);
+      }
+
+      &.isOpen .burger:nth-child(2) {
+        animation: ease 0.3s;
+        transform: scale(0);
+      }
+
+      &.notOpen .burger:nth-child(2) {
+        animation: ease 0.3s;
+        transform: scale(1);
+      }
+
+      &.isOpen .burger:nth-child(3) {
+        animation: ease 0.3s;
+        transform: rotate(45deg), translateY(-7px);
+      }
+
+      &.notOpen .burger:nth-child(3) {
+        animation: ease 0.3s;
+        transform: rotate(0);
       }
     }
 
@@ -53,9 +107,9 @@ nav {
       justify-content: center;
       margin-left: -26px;
 
-      > img {
+      img {
         width: 100%;
-        max-width: 150px;
+        max-width: 180px;
       }
     }
   }

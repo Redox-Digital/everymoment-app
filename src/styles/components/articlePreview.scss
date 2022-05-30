@@ -1,0 +1,30 @@
+.articlePreview {
+  background: var(--dark-gradient);
+  box-shadow: var(--article-box-shadow);
+  border-radius: var(--default-border-radius);
+
+  &__top {
+    height: 150px;
+    border-top-left-radius: var(--default-border-radius);
+    border-top-right-radius: var(--default-border-radius);
+  }
+
+  &__bottom {
+    padding: 25px var(--default-margin);
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: white;
+
+      &:hover + i {
+        transition: all 0.3s ease-in-out;
+        transform: translateX(4px);
+      }
+    }
+  }
+}
