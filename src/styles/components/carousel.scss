@@ -42,10 +42,12 @@ Consulted May 30th, 2022 : https://levelup.gitconnected.com/how-to-make-a-fully-
 
   &:first-of-type {
     margin-left: 0;
+    scroll-snap-align: start;
   }
 
   &:last-of-type {
     margin-right: 0;
+    scroll-snap-align: end;
   }
 
   > h4 {

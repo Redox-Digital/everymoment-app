@@ -33,7 +33,7 @@
   --fs-h3: 26px;
   --fs-h4: 22px;
   --fs-h5: 19px;
-  --fs-h6: 26px;
+  --fs-h6: 15px;
   --fs-p: 16px;
   --fs-sm: 15px;
   --fs-xs: 9px;
@@ -62,13 +62,14 @@
     --fs-h3: 32px;
     --fs-h4: 24px;
     --fs-h5: 21px;
-    --fs-h6: 26px;
+    --fs-h6: 16px;
     --fs-p: 18px;
     --fs-sm: 17px;
     --fs-xs: 10px;
     --fs-btn: 20px;
 
     --default-margin: 20px;
-    --navbar-height: 80px;
+    --navbar-height: 70px;
+    --default-padding: 15px;
   }
 }

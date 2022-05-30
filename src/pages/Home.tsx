@@ -18,18 +18,20 @@ export default function Home() {
       <section id="home__hero" className="hero">
         <h1>enjoy every moment of your life</h1>
         <h5>Découvrez nos derniers produits et collections</h5>
-        <a className="btn btn--sm btn--secondary" href="#">
-          Homme
-        </a>
-        <a className="btn btn--sm btn--secondary" href="#">
-          Femme
-        </a>
+        <div className="hero__btns">
+          <a className="btn btn--sm btn--secondary" href="#">
+            Homme
+          </a>
+          <a className="btn btn--sm btn--secondary" href="#">
+            Femme
+          </a>
+        </div>
       </section>
-      <section className="imgCategories container">
+      <section className="imgCategories container-md">
         <h3>Quel type de vêtements recherches&#8209;tu&nbsp;?</h3>
         <Carousel slides={slides} />
       </section>
-      <section id="home__summary" className="container">
+      <section id="home__summary" className="container-md">
         <div className="row">
           <div className="col-md-6 col-12">
             <h2>Résumé</h2>
@@ -50,8 +52,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="home__collections" className="container">
-        <div id="home__collectionsGallery" className="col-md-7 col-12">
+      <section id="home__collections" className="container-md">
+        <div id="home__collectionsGallery" className="col-md-6 col-12">
           <div className="row">
             <a className="col-6" href="#">
               <img src="https://picsum.photos/298/298" alt="" />
@@ -67,6 +69,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <div className="col-0 col-md-1">{/* spacer */}</div>
         <div id="home__collectionsTexts" className="col-md-5 col-12">
           <h2>Collections</h2>
           <p>
@@ -75,7 +78,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="home__community" className="container">
+      <section id="home__community" className="container-md">
         <h2>Communauté</h2>
         {/* FUTURE COMPONENT, avec onClick */}
         {[...Array(5)].map((i) => (
@@ -88,7 +91,7 @@ export default function Home() {
           />
         ))}
       </section>
-      <section id="home__FAQ" className="container cta">
+      <section id="home__FAQ" className="cta">
         <h3>FAQ</h3>
         <p>
           Lorem ipsum dolor sit amet. Eum voluptatem voluptatem et voluptas voluptates hic expedita

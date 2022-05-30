@@ -11,7 +11,7 @@
     .fullImgContainer {
       padding: 0 !important;
       img {
-        width: 100vw;
+        width: 100%;
         height: auto;
         box-shadow: var(--img-box-shadow);
       }
@@ -61,11 +61,39 @@
 
   &__FAQ {
     background-image: url(https://picsum.photos/600/600);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 70px var(--default-margin);
 
     > .btn {
       margin-top: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #home {
+    &__collections {
+      flex-direction: row;
+
+      &Texts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 0;
+
+        > h2 {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+
+        > p {
+          margin: 0;
+        }
+      }
     }
   }
 }

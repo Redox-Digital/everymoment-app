@@ -7,3 +7,9 @@
     margin-right: 5px;
   }
 }
+
+@media (min-width: 768px) {
+  .langSelector {
+    font-size: var(--fs-h6);
+  }
+}

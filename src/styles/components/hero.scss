@@ -26,9 +26,14 @@
     margin-bottom: 60px;
   }
 
-  > .btn {
+  &__btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
     min-width: 200px;
-    margin-bottom: 20px;
+    margin: 10px;
   }
 
   > .btn:last-of-type {
@@ -42,4 +47,10 @@
 
 #home__hero {
   background-image: url('../assets/img/home-cover.jpg');
+}
+
+@media (max-width: 576px) {
+  .hero__btns {
+    flex-direction: row;
+  }
 }

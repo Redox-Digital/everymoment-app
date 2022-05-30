@@ -8,7 +8,8 @@ const root = ReactDOM.createRoot(document.getElementById('root')!);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* REMOVE BEFORE PRODUCTION */}
+    <BrowserRouter basename="/everymoment-app">
       <App />
     </BrowserRouter>
   </React.StrictMode>
