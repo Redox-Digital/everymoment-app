@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/everymoment-app/static/css/main.20de37df.css",
+    "main.js": "/everymoment-app/static/js/main.1062b54b.js",
+    "static/media/home-cover.jpg": "/everymoment-app/static/media/home-cover.69c4cde1535c0c4a79ab.jpg",
+    "static/media/Sonika-Bold.svg": "/everymoment-app/static/media/Sonika-Bold.4578c291809719a6ee6c.svg",
+    "static/media/Sonika-Regular.svg": "/everymoment-app/static/media/Sonika-Regular.73bc1805fd48d3e722fe.svg",
+    "static/media/Sonika-Regular.eot": "/everymoment-app/static/media/Sonika-Regular.67853364fe82bcfbc81e.eot",
+    "static/media/Sonika-Regular.ttf": "/everymoment-app/static/media/Sonika-Regular.01cef42dea9b95f1d633.ttf",
+    "static/media/Sonika-Bold.eot": "/everymoment-app/static/media/Sonika-Bold.6dcda5845029292d8ab6.eot",
+    "static/media/Sonika-Bold.ttf": "/everymoment-app/static/media/Sonika-Bold.035fc4f47d30998440c8.ttf",
+    "static/media/Sonika-Bold.woff": "/everymoment-app/static/media/Sonika-Bold.11db31787995a3dcc214.woff",
+    "static/media/Sonika-Regular.woff": "/everymoment-app/static/media/Sonika-Regular.757e56da9a0147015ba5.woff",
+    "static/media/Sonika-Bold.woff2": "/everymoment-app/static/media/Sonika-Bold.0505953c4c50c1408a2e.woff2",
+    "static/media/Sonika-Regular.woff2": "/everymoment-app/static/media/Sonika-Regular.8d2b13dee95078b1a38d.woff2",
+    "index.html": "/everymoment-app/index.html",
+    "main.20de37df.css.map": "/everymoment-app/static/css/main.20de37df.css.map",
+    "main.1062b54b.js.map": "/everymoment-app/static/js/main.1062b54b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20de37df.css",
+    "static/js/main.1062b54b.js"
+  ]
+}
