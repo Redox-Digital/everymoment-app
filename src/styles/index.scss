@@ -20,8 +20,10 @@
 @import './elements/nav.scss';
 
 // Layouts : Style rules for elements responsible for layout or structuring.
+@import './layouts/global.scss';
 @import './layouts/containers.scss';
 @import './layouts/home.scss';
+@import './layouts/about.scss';
 
 // Components : Style rules for UI components.
 @import './components/buttons.scss';
@@ -31,3 +33,4 @@
 @import './components/carousel.scss';
 @import './components/langSelector.scss';
 @import './components/mobileMenu.scss';
+@import './components/secondaryMenu.scss';

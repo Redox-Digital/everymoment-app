@@ -1,0 +1,19 @@
+.secondaryMenu {
+  position: sticky;
+  top: var(--navbar-height);
+  background: var(--dark-gradient);
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px var(--default-margin);
+
+  > a {
+    color: white;
+    font-weight: 700;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
