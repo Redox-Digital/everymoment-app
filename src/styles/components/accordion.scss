@@ -1,0 +1,9 @@
+.accordionGroup {
+  /* Overrding MUI settings */
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    background: none;
+  }
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    //margin: 0;
+  }
+}

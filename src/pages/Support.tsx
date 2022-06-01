@@ -1,5 +1,7 @@
 import React from 'react';
+
 import ContactBlock from '../components/ContactBlock';
+import AccordionGroup from '../components/AccordionGroup';
 import SecondaryMenu from '../components/SecondaryMenu';
 
 export default function Support() {
@@ -50,6 +52,7 @@ export default function Support() {
         <h3>
           <abbr title="Foire aux questions">FAQ</abbr>
         </h3>
+        <AccordionGroup />
       </section>
     </main>
   );
