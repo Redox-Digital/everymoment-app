@@ -9,7 +9,11 @@ export default function About() {
         <h1>À propos</h1>
         <h5>At omnis eligendi est explicabo nostrum eos sequi omnis non earum deserunt.</h5>
       </section>
-      <SecondaryMenu />
+      <SecondaryMenu>
+        <a href="#about__history">Histoire</a>
+        <a href="#about__eco">Eco</a>
+        <a href="#about__ethics">Ethique</a>
+      </SecondaryMenu>
       <section id="about__history" className="container-md">
         <h2>Histoire</h2>
         <p>

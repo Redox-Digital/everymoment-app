@@ -5,3 +5,12 @@ main {
 section:not(.hero) {
   margin: 70px auto;
 }
+
+hr {
+  background: var(--primary-gradient);
+  display: block;
+  height: 5px;
+  border-radius: 100px;
+  border: none;
+  max-width: 80vw;
+}

@@ -1,0 +1,9 @@
+#support {
+  &__contact {
+    text-align: center;
+    > .contactBlocks {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

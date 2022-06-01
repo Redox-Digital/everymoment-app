@@ -24,8 +24,10 @@
 @import './layouts/containers.scss';
 @import './layouts/home.scss';
 @import './layouts/about.scss';
+@import './layouts/support.scss';
 
 // Components : Style rules for UI components.
+
 @import './components/buttons.scss';
 @import './components/hero.scss';
 @import './components/articlePreview.scss';
@@ -34,3 +36,4 @@
 @import './components/langSelector.scss';
 @import './components/mobileMenu.scss';
 @import './components/secondaryMenu.scss';
+@import './components/contactBlock.scss';
