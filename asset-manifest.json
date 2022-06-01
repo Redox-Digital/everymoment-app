@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/everymoment-app/static/css/main.9f1a0d05.css",
-    "main.js": "/everymoment-app/static/js/main.7c752946.js",
+    "main.css": "/everymoment-app/static/css/main.bab2d00e.css",
+    "main.js": "/everymoment-app/static/js/main.8a12c056.js",
     "static/media/home-cover.jpg": "/everymoment-app/static/media/home-cover.69c4cde1535c0c4a79ab.jpg",
     "static/media/Sonika-Bold.svg": "/everymoment-app/static/media/Sonika-Bold.4578c291809719a6ee6c.svg",
     "static/media/Sonika-Regular.svg": "/everymoment-app/static/media/Sonika-Regular.73bc1805fd48d3e722fe.svg",
@@ -14,11 +14,11 @@
     "static/media/Sonika-Bold.woff2": "/everymoment-app/static/media/Sonika-Bold.0505953c4c50c1408a2e.woff2",
     "static/media/Sonika-Regular.woff2": "/everymoment-app/static/media/Sonika-Regular.8d2b13dee95078b1a38d.woff2",
     "index.html": "/everymoment-app/index.html",
-    "main.9f1a0d05.css.map": "/everymoment-app/static/css/main.9f1a0d05.css.map",
-    "main.7c752946.js.map": "/everymoment-app/static/js/main.7c752946.js.map"
+    "main.bab2d00e.css.map": "/everymoment-app/static/css/main.bab2d00e.css.map",
+    "main.8a12c056.js.map": "/everymoment-app/static/js/main.8a12c056.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f1a0d05.css",
-    "static/js/main.7c752946.js"
+    "static/css/main.bab2d00e.css",
+    "static/js/main.8a12c056.js"
   ]
 }
