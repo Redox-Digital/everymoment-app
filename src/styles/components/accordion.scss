@@ -2,15 +2,56 @@
   /* Overrding MUI settings */
   .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
     background: none;
+    box-shadow: none;
+    border: none;
   }
   .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
     margin: 0;
   }
 
+  .css-o4b71y-MuiAccordionSummary-content {
+    justify-content: space-between;
+  }
+
+  .css-o4b71y-MuiAccordionSummary-content.Mui-expanded i {
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+    padding: 0;
+  }
+
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+    display: none;
+  }
+
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:before {
+    display: none;
+  }
+
+  .css-15v22id-MuiAccordionDetails-root {
+    padding: 0px;
+    padding-bottom: var(--default-margin);
+  }
+
   .accordion {
+    &__hr {
+      height: 2px;
+      width: 100%;
+      max-width: 100%;
+    }
+
     &__title {
       h4 {
         margin: 0;
+        color: var(--black);
+      }
+
+      i {
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+        color: var(--primary-blue);
       }
     }
 

@@ -25,22 +25,28 @@ export default function MainMenu() {
           <span className="iconLabel" />
         </button>
         <div className="menuLeft">
-          <a href="#">Vêtements</a>
-          <a href="#">Accessoires</a>
+          <Link to="#">Vêtements</Link>
+          <Link to="#">Accessoires</Link>
         </div>
         <div className="menuMid">
-          <a href="#">
+          <Link to="/">
             <img src="./assets/img/logo-horiz.png" alt="Every Moment" />
-          </a>
+          </Link>
         </div>
         <div className="menuRight">
           <div className="menuRight__links">
-            <a href="#">À propos</a>
-            <a href="#">Journal</a>
+            <Link to="about">À propos</Link>
+            <Link to="journal">Journal</Link>
           </div>
           <div className="menuRight__pictograms">
-            <a href="#">Compte</a>
-            <a href="#">Panier</a>
+            <Link to="#">
+              <i className="fa-solid fa-user" />
+              <span className="iconLabel">Compte</span>
+            </Link>
+            <Link to="#">
+              <i className="fa-solid fa-bag-shopping" />
+              <span className="iconLabel">Panier</span>
+            </Link>
           </div>
         </div>
       </div>

@@ -30,6 +30,37 @@ nav {
     &Left,
     &Right {
       display: none;
+      a {
+        color: var(--black);
+        white-space: nowrap;
+      }
+    }
+
+    &Left a {
+      margin-left: 25px;
+    }
+
+    &Right {
+      align-items: center;
+
+      a {
+        margin-right: 25px;
+      }
+
+      &__pictograms {
+        display: flex;
+        flex-direction: row;
+
+        > a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          > span {
+            padding-top: 2px;
+          }
+        }
+      }
     }
 
     &Burger {
@@ -114,5 +145,24 @@ nav {
         max-width: 180px;
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  nav .menu {
+    &Left,
+    &Right {
+      display: flex;
+    }
+  }
+
+  nav .menu .menuRight .menuRight__pictograms {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  nav .menu .menuRight .menuRight__pictograms {
+    display: flex;
   }
 }

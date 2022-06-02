@@ -69,9 +69,9 @@ export default function MobileMenu(props: MobileMenuProps) {
       </details>
       <Link to="#">Mon compte</Link>
       <Link to="#">Mon panier</Link>
-      <Link to="#">À propos</Link>
-      <Link to="#">Journal</Link>
-      <Link to="#">Support</Link>
+      <Link to="about">À propos</Link>
+      <Link to="journal">Journal</Link>
+      <Link to="support">Support</Link>
       <div className="menuMobile__langSelector">
         <LangSelector />
       </div>

@@ -3,7 +3,16 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 
-export default function AccordionGroup() {
+interface AccordionProps {
+  title: string;
+  desc: string;
+}
+
+interface AccordionGroupProps {
+  elements: AccordionProps[];
+}
+
+export default function AccordionGroup(props: AccordionGroupProps) {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -12,44 +21,28 @@ export default function AccordionGroup() {
 
   return (
     <div className="accordionGroup">
-      <Accordion
-        className="accordion"
-        expanded={expanded === 'panel1'}
-        onChange={handleChange('panel1')}
-      >
-        <AccordionSummary
-          className="accordion__title"
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
-        >
-          <h4>General settings</h4>
-        </AccordionSummary>
-        <AccordionDetails className="accordion__details">
-          <small>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
-          </small>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        className="accordion"
-        expanded={expanded === 'panel2'}
-        onChange={handleChange('panel2')}
-      >
-        <AccordionSummary
-          className="accordion__title"
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
-        >
-          <h4>General settings</h4>
-        </AccordionSummary>
-        <AccordionDetails className="accordion__details">
-          <small>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
-          </small>
-        </AccordionDetails>
-      </Accordion>
+      {props.elements.map((elt, i) => (
+        <div>
+          <Accordion
+            className="accordion"
+            expanded={expanded === `panel${i}`}
+            onChange={handleChange(`panel${i}`)}
+          >
+            <AccordionSummary
+              className="accordion__title"
+              aria-controls="panel1bh-content"
+              id={`panel${i}bh-header`}
+            >
+              <h4>{elt.title}</h4>
+              <i className="fa-solid fa-plus" />
+            </AccordionSummary>
+            <AccordionDetails className="accordion__details">
+              <small>{elt.desc}</small>
+            </AccordionDetails>
+          </Accordion>
+          <hr className="accordion__hr" />
+        </div>
+      ))}
     </div>
   );
 }

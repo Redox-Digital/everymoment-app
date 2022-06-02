@@ -5,18 +5,65 @@ import AccordionGroup from '../components/AccordionGroup';
 import SecondaryMenu from '../components/SecondaryMenu';
 
 export default function Support() {
+  // Static data for dev purpose
+  const accordions = [
+    {
+      title: 'Commande & Envoi',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Retour',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Paiement',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Thème 4',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Thème 5',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+  ];
+
+  const conditions = [
+    {
+      title: 'Condition 1',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Condition 2',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Condition 3',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Condition 4',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+    {
+      title: 'Condition 5',
+      desc: 'Lorem ipsum dolor sit amet. Ea saepe velit aut galisum distinctio qui Quis velit et architecto voluptatem est aliquid rerum quo ullam exercitationem et magni esse. ',
+    },
+  ];
+
   return (
     <main id="support">
       <section className="hero">
         <h1>Que pouvons-nous faire pour toi ?</h1>{' '}
         <div className="hero__btns">
-          <a className="btn btn--sm btn--secondary" href="#">
+          <a className="btn btn--sm btn--secondary" href="#support__contact">
             Obtenir une assistance directe
           </a>
-          <a className="btn btn--sm btn--secondary" href="#">
+          <a className="btn btn--sm btn--secondary" href="#support__faq">
             FAQ
           </a>
-          <a className="btn btn--sm btn--secondary" href="#">
+          <a className="btn btn--sm btn--secondary" href="#support__care">
             Entretien & réparations
           </a>
         </div>
@@ -52,7 +99,14 @@ export default function Support() {
         <h3>
           <abbr title="Foire aux questions">FAQ</abbr>
         </h3>
-        <AccordionGroup />
+        <AccordionGroup elements={accordions} />
+      </section>
+      <section id="support__care">
+        <h2>Entretien & réparations</h2>
+      </section>
+      <section id="support__conditions">
+        <h3>Conditions générales</h3>
+        <AccordionGroup elements={conditions} />
       </section>
     </main>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LangSelector from './LangSelector';
 
 export default function Footer() {
@@ -61,24 +62,24 @@ export default function Footer() {
           <h4 className="d-none d-md-flex">Support</h4>
           <ul>
             <li>
-              <a href="#">
+              <Link to="contact">
                 <h3>Contact</h3>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="support#support__faq">
                 <h3>FAQ</h3>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="support#support__care">
                 <h3>Entretien & réparations</h3>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="support#support__conditions">
                 <h3>Conditions générales</h3>
-              </a>
+              </Link>
             </li>
             <li>
               <LangSelector />
